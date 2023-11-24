@@ -25,7 +25,7 @@ export default class DelaunayTriangulation extends Mesh2D {
         this.initTriangles(screenSize);
     }
       
-    private initTriangles(screenSize: number) {
+    private initTriangles(screenSize: number): void {
         this.vertices = [
             new P5.Vector(0,0),
             new P5.Vector(0,screenSize),
